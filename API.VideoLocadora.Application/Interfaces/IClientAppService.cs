@@ -8,7 +8,8 @@ namespace API.VideoLocadora.Application.Interfaces
     public interface IClientAppService
     {
         IEnumerable<Client> GetClients();
+        Client GetClientById(long cpf);
         string PostClient(Client film);
-        string DeleteClient(int id);
+        string DeleteClient(long cpf);
     }
 }

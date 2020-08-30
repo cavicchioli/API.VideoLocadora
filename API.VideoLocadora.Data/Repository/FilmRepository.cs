@@ -1,4 +1,5 @@
-﻿using API.VideoLocadora.Domain.Models;
+﻿using API.VideoLocadora.Domain.Inferfaces;
+using API.VideoLocadora.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace API.VideoLocadora.Data.Repository
 {
-    public class FilmRepository
+    public class FilmRepository : IFilmRepository
     {
         private List<Film> films;
 
@@ -56,6 +57,24 @@ namespace API.VideoLocadora.Data.Repository
             {
                 films.Remove(filme);
                 filme.Active = false;
+                films.Add(filme);
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool UpdateFilmStatus(int id, string status)
+        {
+            Film filme = GetFilmById(id);
+
+            if (filme != null && filme.Active == true)
+            {
+                films.Remove(filme);
+                filme.Status = status;
                 films.Add(filme);
 
                 return true;

@@ -8,8 +8,8 @@ namespace API.VideoLocadora.Application.Interfaces
     public interface IFilmAppService
     {
         IEnumerable<Film> GetFilms();
-        void PostFilm(Film film);
-        void PutFilm(Film film);
-        void DeleteFilm(int id);
+        Film GetFilmById(int id);
+        string PostFilm(Film film);
+        string DeleteFilm(int id);
     }
 }

@@ -11,5 +11,6 @@ namespace API.VideoLocadora.Domain.Inferfaces
         Film GetFilmById(int id);
         bool CreateNewFilm(Film newFilm);
         bool DeleteFilm(int id);
+        bool UpdateFilmStatus(int id, string status);
     }
 }

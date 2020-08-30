@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.VideoLocadora", "API.Vi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.VideoLocadora.Domain", "..\API.VideoLocadora.Domain\API.VideoLocadora.Domain.csproj", "{415D1CC7-FA15-4A5C-988E-B97655F67607}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.VideoLocadora.Application", "..\API.VideoLocadora.Application\API.VideoLocadora.Application.csproj", "{C5858650-2D74-41E0-8A00-CCF38B1DD75E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.VideoLocadora.Application", "..\API.VideoLocadora.Application\API.VideoLocadora.Application.csproj", "{C5858650-2D74-41E0-8A00-CCF38B1DD75E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.VideoLocadora.Data", "..\API.VideoLocadora.Data\API.VideoLocadora.Data.csproj", "{F2D1675B-5DE4-4B1E-B350-43FDF5299E33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.VideoLocadora.Data", "..\API.VideoLocadora.Data\API.VideoLocadora.Data.csproj", "{F2D1675B-5DE4-4B1E-B350-43FDF5299E33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.VideoLocadora.CrossCutting.IoC", "..\API.VideoLocadora.CrossCutting.IoC\API.VideoLocadora.CrossCutting.IoC.csproj", "{3AD0AA07-6E55-49F3-8869-D2D28CC88D51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F2D1675B-5DE4-4B1E-B350-43FDF5299E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2D1675B-5DE4-4B1E-B350-43FDF5299E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2D1675B-5DE4-4B1E-B350-43FDF5299E33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD0AA07-6E55-49F3-8869-D2D28CC88D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD0AA07-6E55-49F3-8869-D2D28CC88D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD0AA07-6E55-49F3-8869-D2D28CC88D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD0AA07-6E55-49F3-8869-D2D28CC88D51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

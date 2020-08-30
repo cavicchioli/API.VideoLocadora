@@ -1,4 +1,5 @@
-﻿using API.VideoLocadora.Domain.Models;
+﻿using API.VideoLocadora.Domain.Inferfaces;
+using API.VideoLocadora.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace API.VideoLocadora.Data.Repository
 {
-    public class ClientRepository
+    public class ClientRepository : IClientRepository
     {
   
         private List<Client> clients;

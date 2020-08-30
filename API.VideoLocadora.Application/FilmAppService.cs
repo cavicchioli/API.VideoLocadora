@@ -1,4 +1,5 @@
 ﻿using API.VideoLocadora.Application.Interfaces;
+using API.VideoLocadora.Domain.Inferfaces;
 using API.VideoLocadora.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -8,32 +9,68 @@ namespace API.VideoLocadora.Application
 {
     public class FilmAppService : IFilmAppService
     {
+        private readonly IFilmRepository _filmRepository;
 
-        //cadastrar um filme, 
-
-
+        public FilmAppService(IFilmRepository filmRepository)
+        {
+            _filmRepository = filmRepository;
+        }
+        
         public IEnumerable<Film> GetFilms()
         {
-            return new List<Film>();
+            return _filmRepository.GetAllFilms();
         }
 
         public Film GetFilmById(int id)
         {
-            return null;
+            return _filmRepository.GetFilmById(id);
         }
 
-        public void PostFilm(Film film)
+        public string PostFilm(Film film)
         {
+            Film db = _filmRepository.GetFilmById(film.Id);
+            if (db == null)
+            {
+                bool result = _filmRepository.CreateNewFilm(db);
+
+                if (result)
+                {
+                    return "Registro Inserido";
+                }
+                else
+                {
+                    return "Erro ao Inserir Registo";
+                }
+
+            }
+            else
+            {
+                return "Cliente Existente";
+            }
 
         }
 
-        public void PutFilm(Film film)
+        public string DeleteFilm(int id)
         {
+            Film db = _filmRepository.GetFilmById(id);
+            if (db != null)
+            {
+                bool result = _filmRepository.DeleteFilm(db.Id);
 
-        }
+                if (result)
+                {
+                    return "Registro Excluido";
+                }
+                else
+                {
+                    return "Erro ao Excluir Registo";
+                }
 
-        public void DeleteFilm(int id)
-        {
+            }
+            else
+            {
+                return "Filme Existente";
+            }
 
         }
     }

@@ -1,14 +1,20 @@
 ﻿using API.VideoLocadora.Domain.Models;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace API.VideoLocadora.Application.Interfaces
 {
     public interface IRentalAppService
     {
-        IEnumerable<Rent> GetRetalList();
+        IEnumerable<Rent> GetAllRents();
 
-        void RentFilm(int clientId, int filmId, int period);
+        Rent GetRentById(long clientCpf, int filmId, DateTime dataInicio);
 
-        void ReturnFilm(int clientId, int filmId);
+        string CreateNewRent(long clientCpf, int filmId, int periodo);
+
+        string DevolverFilme(long clientCpf, int filmId, DateTime dataLocacao);
+
+        
     }
 }
