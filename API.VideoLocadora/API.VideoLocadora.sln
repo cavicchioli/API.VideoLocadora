@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.VideoLocadora", "API.VideoLocadora.csproj", "{BDD6E40C-E58B-4EFA-9833-46C3638B28DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.VideoLocadora.Domain", "..\API.VideoLocadora.Domain\API.VideoLocadora.Domain.csproj", "{415D1CC7-FA15-4A5C-988E-B97655F67607}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.VideoLocadora.Application", "..\API.VideoLocadora.Application\API.VideoLocadora.Application.csproj", "{C5858650-2D74-41E0-8A00-CCF38B1DD75E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.VideoLocadora.Data", "..\API.VideoLocadora.Data\API.VideoLocadora.Data.csproj", "{F2D1675B-5DE4-4B1E-B350-43FDF5299E33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDD6E40C-E58B-4EFA-9833-46C3638B28DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD6E40C-E58B-4EFA-9833-46C3638B28DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD6E40C-E58B-4EFA-9833-46C3638B28DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD6E40C-E58B-4EFA-9833-46C3638B28DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{415D1CC7-FA15-4A5C-988E-B97655F67607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{415D1CC7-FA15-4A5C-988E-B97655F67607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{415D1CC7-FA15-4A5C-988E-B97655F67607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{415D1CC7-FA15-4A5C-988E-B97655F67607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5858650-2D74-41E0-8A00-CCF38B1DD75E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5858650-2D74-41E0-8A00-CCF38B1DD75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5858650-2D74-41E0-8A00-CCF38B1DD75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5858650-2D74-41E0-8A00-CCF38B1DD75E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2D1675B-5DE4-4B1E-B350-43FDF5299E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2D1675B-5DE4-4B1E-B350-43FDF5299E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2D1675B-5DE4-4B1E-B350-43FDF5299E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2D1675B-5DE4-4B1E-B350-43FDF5299E33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9C3E174-D920-4A4F-A1F9-D802C5348BE0}
+	EndGlobalSection
+EndGlobal
