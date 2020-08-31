@@ -5,7 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="5.5.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUi" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\API.VideoLocadora.Application\API.VideoLocadora.Application.csproj" />
+    <ProjectReference Include="..\API.VideoLocadora.CrossCutting.IoC\API.VideoLocadora.CrossCutting.IoC.csproj" />
   </ItemGroup>
 
 </Project>

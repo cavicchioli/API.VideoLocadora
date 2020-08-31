@@ -8,12 +8,11 @@ using API.VideoLocadora.Domain.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.VideoLocadora.Controller
+namespace API.VideoLocadora.Controllers
 {
     [Produces("application/json")]
     [Route("api/retals")]
-    [ApiController]
-    public class RentalController : ControllerBase
+    public class RentalController : Controller
     {
         private readonly IRentalAppService _rentalAppService;
 

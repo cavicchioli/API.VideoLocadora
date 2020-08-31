@@ -8,12 +8,11 @@ using API.VideoLocadora.Domain.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.VideoLocadora.Controller
+namespace API.VideoLocadora.Controllers
 {
     [Produces("application/json")]
     [Route("api/films")]
-    [ApiController]
-    public class FilmController : ControllerBase
+    public class FilmController : Controller
     {
         private readonly IFilmAppService _filmAppService;
 

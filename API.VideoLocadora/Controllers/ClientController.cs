@@ -5,15 +5,13 @@ using System.Net;
 using System.Threading.Tasks;
 using API.VideoLocadora.Application.Interfaces;
 using API.VideoLocadora.Domain.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.VideoLocadora.Controller
+namespace API.VideoLocadora.Controllers
 {
     [Produces("application/json")]
     [Route("api/clients")]
-    [ApiController]
-    public class ClientController : ControllerBase
+    public class ClientController : Controller
     {
         private readonly IClientAppService _clientAppService;
 
